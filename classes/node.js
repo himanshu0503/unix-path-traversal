@@ -30,8 +30,10 @@ class Node {
     if (this.children[childVal]) {
       delete this.children[childVal].parent;
       delete this.children[childVal];
+      return 'SUCC: DELETED';
+    } else {
+      return 'ERR: NO SUCH DIRECTORY';  
     }
-    return 'SUCC: DELETED';
   }
   getAllChildren() {
     return Object.keys(this.children);
