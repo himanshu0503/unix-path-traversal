@@ -1,0 +1,22 @@
+{
+  "name": "unix-path-traversal",
+  "version": "1.0.0",
+  "description": "A node package to simulate linux path traversal",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/himanshu0503/unix-path-traversal.git"
+  },
+  "author": "Himanshu Aggarwal",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/himanshu0503/unix-path-traversal/issues"
+  },
+  "homepage": "https://github.com/himanshu0503/unix-path-traversal#readme",
+  "dependencies": {
+    "prompt": "1.0.0"
+  }
+}
