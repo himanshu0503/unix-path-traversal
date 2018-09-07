@@ -17,6 +17,13 @@ function mkdir(rootNode, context, values) {
       //User can pass like dir//dir2 so we need to skip that
       if (dirs[i] === '')
         continue;
+      if (dirs[i] === '.')
+        continue;
+      if (dirs[i] === '..') {
+        startNode = startNode.getParent();
+        continue;
+      }
+
       let nextNode = startNode.getChild(dirs[i]);
       if (typeof nextNode === 'string') {
         result.push(nextNode);
