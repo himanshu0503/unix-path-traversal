@@ -11,7 +11,7 @@ let context = {
 
 function main() {
   prompt.get(['input'], function(err, result) {
-    var args = result.input.split(' ');
+    var args = result.input.trim().split(' ');
     let cmd = args[0];
     let values = args.splice(1, args.length);
     if (cmd === 'quit') {
